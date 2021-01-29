@@ -1,0 +1,257 @@
+/* geral */
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+    a{text-decoration: none; font-weight: bold; width: 10%;}
+    .nav {background: #1d1d1d;border-bottom: 1px solid #adadad;}
+    .nav a {padding: 10px 0; text-align: center;}
+    .goDown { color: #5aff3d; font-size: 4rem!important; cursor: pointer;animation: animate 1.4s infinite; margin: 0px;padding: 0px;}
+    
+    .boxIcon 
+    {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .boxIcon span 
+    {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 4px solid  #5aff3d;
+        border-right: 4px solid  #5aff3d;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+
+
+
+    .boxIcon span:nth-child(2)
+    {
+        animation-delay: -0.2s;
+        
+    }
+    .boxIcon span:nth-child(3)
+    {
+        animation-delay: -0.4s;
+    }
+
+    @keyframes animate 
+    {
+        0%
+        {
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px,-20px);
+        }
+        50%
+        {
+            opacity: 1;
+        }
+        100%
+        {
+            opacity: 0;
+            transform: rotate(45deg) translate(20px,20px);
+           
+        }
+
+
+    }
+
+  
+
+    
+
+  
+
+
+   
+    
+
+    h4:before{content: '';position: absolute;top: 5px;left: 0;width: 29px;height: 2px;background: linear-gradient(to right, #c79864, #cc7f39);}
+    h4{position: relative;color: #a2a2a2;font-weight: 600;letter-spacing: .7px;font-size: 14px;text-transform: uppercase;margin: 0;padding: 0 0 10px 37px;}
+    .title-skill {margin: 10px;}
+    .skills {background: #272727;padding: 50px; display: flex; flex-direction: column;}
+
+    .bloco-info {background-color: #292929; padding: 10px; margin-top: 20px; display: flex; border-radius: 5px; color: #a2a2a2;}
+    .mini-bloco1 {width: 60%;}
+    .mini-bloco2 {width: 40%;}
+    p.text-bloco {margin: 10px 0 20px;}
+    h2{color: #a2a2a2; padding-bottom: 10px;}
+
+    .A-text {margin: 30px 0 30px;}
+    .text1 {color: #fff;}
+
+    .resume {width: 100%;background-color: #1d1d1d;padding: 50px;}
+    .contant-resume {background-color: #272727;margin-bottom: 25px;padding: 20px;color: #fff;border-left: 2px solid #c98e55;margin-top: 30px;}
+    .contant-contact {background-color: #272727;margin-bottom: 25px;padding: 20px;color: #fff;border-left: 2px solid #c98e55;margin-top: 30px;}
+    .contant-resume p {line-height: 1.8;margin-bottom: 0;font-weight: 400;color: #a2a2a2;margin-top: 10px;padding-top: 10px;border-top: 1px solid rgba(255, 255, 255, .05);}
+    .resume-date {display: inline-block;font-size: 14px;line-height: 1;font-weight: 600;margin: 0;color: #c79864;}
+    .contant-portfolio {background-color: #8b8b8b;color: #fff;text-align: center;padding: 20px;margin: 10px;border-radius: 5px; }
+   
+
+    button {width: 40%;margin: 30px 0;padding: 8px;border-radius: 5px;border: none;cursor: pointer;}
+    button:hover{margin: 30px 0;padding: 8px;border-radius: 5px;border: none; background-color: #c79864;}
+
+    .contant-portfolio h2{color: #c79864;}
+
+    .footer {background: #1d1d1d;padding: 25px;text-align: center;color: #fff;}
+    .row {display: flex;margin: 10px;}
+    .form {width: 80%;background: #272727;box-shadow: -1px -4px 12px 0px rgba(0,0,0,0.75);padding: 20px;display: flex;flex-direction: column;}
+    .form1 input{margin: 6px 0;height: 40px;}
+    #form1 input[type='text'],
+    #form1 input[type='email']{
+        width: 100%;height: 30px;
+        padding: 0 5px;
+        margin: 5px 0;
+        background: #58545400;
+        border: 1px solid #a2a2a2;
+    }
+    .box {
+        margin-right: 25px;
+    }
+
+    #form1 input[type='submit']{width: 30%;padding: 8px;margin: 5px 0;border-radius: 30px;border: none;cursor: pointer;}
+    #form1 input:hover{background-color: #c79864;}
+
+    #form1 textarea {width: 100%; height: 200px;margin: 5px 0;background: #58545400;border: 1px solid #a2a2a2;padding: 5px;text-align: center;color: #fff;}
+        .icones a {color: #fff;cursor: pointer;}
+        .icones a:hover {color: #edb356;cursor: pointer;}
+    
+    
+
+/* Small smartphones */
+@media screen and (max-width: 480px){
+
+    .header{display: flex; flex-direction: column;}
+
+    .nav { display: none; flex-direction: column;order: 2;position: fixed;right: 0;top: 50px;width: 100px;padding: 5px;}
+    .nav a {width: 100%;  color: #fff;}
+    .title-name {width: 100%;position: relative;top: 5px;padding: 0 20px;}
+
+    .buttonMob{order:1;text-align: right;padding: 7px 7px 0;position: fixed;background: #fff;right: 0; z-index: 2;}
+    .logo img {width: 50px;position: absolute;top: 0; margin: 3px;}
+    .capa {width: 100%; background: #1d1d1d;}
+    .capa img {width: 100%;z-index: 0;}
+    .title{text-align: center; font-size: 28px; padding-top: 20px;position: absolute; color: #edb356;}
+    .text1{text-align: center; font-size: 14px; padding-top: 55px;position: absolute;}
+    .inform{width: 95%; margin: 10px;color: #a2a2a2;}
+    .perfil {width: 95%; margin: 10px;background-color: #fff;padding: 5px;}
+    .perfil img{width: 100%;}
+    .container1 {background-color: #1d1d1d; padding: 10px;} 
+
+    .bloco-info { background-color: #292929; padding: 10px; margin-top: 20px; border-radius: 5px; color: #a2a2a2; text-align: center; display: flex; flex-direction: column;}
+    .mini-bloco1 {width: 100%;}
+    .mini-bloco2 {width: 100%;}
+
+    .skills {background: #272727;padding: 10px;display: flex;flex-direction: column;}
+    .contant-skill {background-color: #1d1d1d;color: #fff;text-align: center;padding: 20px;margin: 10px;border-radius: 5px;}
+    .resume {width: 100%;background-color: #1d1d1d;padding: 10px;}
+    
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .form{width: 100%;}
+    .box {
+        margin-right: 0px;
+    }
+    
+
+
+} 
+
+/* medium smartphones */
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+    .header{display: flex; flex-direction: column;}
+
+    .nav { display: none; flex-direction: column;order: 2;position: fixed;right: 0;top: 50px;width: 100px;padding: 5px;}
+    .nav a {width: 100%; color: #fff;}
+    .title-name {width: 100%;position: relative;top: 50px;padding: 0 20px;}
+
+    .buttonMob{order:1;text-align: right;padding: 7px 7px 0;position: fixed;background: #fff;right: 0; z-index: 2;cursor: pointer;}
+    .logo img {width: 50px;position: absolute;top: 0; margin: 3px;}
+    .capa {width: 100%; background: #1d1d1d;}
+    .capa img {width: 100%;z-index: 0;}
+    .title{text-align: center; font-size: 50px; padding-top: 20px;position: absolute; color: #edb356;}
+    .text1{text-align: center; font-size: 14px; padding-top: 80px;position: absolute;}
+    .inform{width: 95%; margin: 10px;color: #a2a2a2;} 
+    .perfil {width: 95%; margin: 10px;background-color: #fff;padding: 5px;}
+    .perfil img{width: 100%;}
+    .container1 {background-color: #1d1d1d; padding: 40px;} 
+
+    .skills {background: #272727;padding: 10px;display: flex;flex-direction: column;}
+    .contant-skill {background-color: #1d1d1d;color: #fff;text-align: center;padding: 20px;margin: 10px;border-radius: 5px;}
+    .resume {width: 100%;background-color: #1d1d1d;padding: 10px;}
+    
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .form{width: 100%;}
+    .box {
+        margin-right: 0px;
+    }
+
+} 
+
+/* tablets and smmal desk */
+@media screen and (min-width: 769px) and (max-width: 1199px){
+    .nav { display: flex;}
+    .nav a {color: #fff;padding: 10px 0; left: 100px; position: relative; margin: 5px; border-radius: 20px;}
+    .nav a:hover {background: #666;}
+    .title-name {width: 100%;position: absolute;padding: 40px;top: 60px;}
+    .contant-portfolio{width: 100%;}
+
+    .buttonMob {display: none;}
+    .logo{width: 5%; }
+    .logo img {width: 30px;position: absolute;top: 0;margin: 5px;}
+    .capa {width: 100%; background: #1d1d1d;}
+    .title{text-align: center; font-size: 50px; padding-top: 20px; position: absolute; color: #edb356;}
+    .text1{text-align: center; font-size: 14px; padding-top: 80px;position: absolute;}
+    .capa img {width: 100%;z-index: 0;}
+    .container1 {background-color: #1d1d1d; padding: 50px;}
+    .inform{ color: #a2a2a2;}
+    .perfil {width: 40%;float: left;background-color: #fff;padding: 5px;margin-right: 20px;}
+    .perfil img{width: 100%; padding: 5px;}
+    .skills {background: #272727;padding: 50px;display: block;}
+
+    .container-skill {display: flex;}
+    .contant-skill {width: 100%; background-color: #1d1d1d; color: #fff; text-align: center; padding: 20px; margin: 10px; border-radius: 5px;}
+    .contant-portfolio:hover{box-shadow: -1px -4px 12px 0px rgba(0,0,0,0.75);cursor: pointer;transform: scale(1.03);transition: 1s all;background-color: #252525;}
+    .nav {display: flex;position: fixed;width: 100vw;z-index: 2;}
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px){
+    .nav { display: flex; }
+    .nav a {color: #fff;padding: 10px 0; left: 100px; position: relative; margin: 5px; border-radius: 20px;}
+    .nav a:hover {background: #666;}
+    .text1 {text-align: center;font-size: 24px;padding-top: 80px;position: absolute;color: #fff;}
+    .title-name {width: 100%;position: absolute;padding: 40px;top: 90px;}
+    .contant-portfolio{width: 100%;}
+
+    .buttonMob {display: none;}
+    .logo{width: 5%; }
+    .logo img {
+        width: 30px;position: absolute;top: 0;margin: 5px;}
+        .capa {width: 100%; background: #1d1d1d;}
+        .title{text-align: center; font-size: 50px; padding-top: 20px;position: absolute; color: #edb356;}
+        .text1{text-align: center; font-size: 14px; padding-top: 80px;position: absolute;}
+        .capa img {width: 100%;z-index: 0;}
+        .container1 {width: 100%; height: 85vh; background-color: #1d1d1d; padding: 50px;}
+        .inform{width: 55%; float: right; color: #a2a2a2;}
+        .perfil {width: 40%;float: left;background-color: #fff;padding: 5px;}
+        .perfil img{width: 100%; padding: 5px;}
+        
+
+        .container-skill {display: flex;}
+        .contant-skill {width: 100%; background-color: #1d1d1d; color: #fff; text-align: center; padding: 20px; margin: 10px; border-radius: 5px;}
+        .contant-portfolio:hover{box-shadow: -1px -4px 12px 0px rgba(0,0,0,0.75);cursor: pointer;transform: scale(1.03);transition: 1s all;background-color: #252525;}
+        .nav {display: flex;position: fixed;width: 100vw;z-index: 2;}
+} 
