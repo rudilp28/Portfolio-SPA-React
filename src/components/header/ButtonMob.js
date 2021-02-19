@@ -34,7 +34,7 @@ export default class buttonMob extends React.Component {
             <div className="buttonMob" onClick={this.clickMe.bind(this)}>
                 <FaGripLines size="40px"/>
                 
-                {/* <img src="../img/botao.png" alt=""/> */}
+                {/* { <img src="../img/botao.png" alt=""/>} */}
             </div>
         );
     }

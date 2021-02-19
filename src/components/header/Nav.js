@@ -1,5 +1,6 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 
@@ -7,12 +8,18 @@ export default class Nav extends React.Component {
     render(){
         return(
             <div className="nav">
-                <AnchorLink href='#home' offset="20">Home</AnchorLink>
-                <AnchorLink href='#about' offset="25">About</AnchorLink>
-                <AnchorLink href='#skill' offset="25">Skills</AnchorLink>
-                <AnchorLink href='#resume' offset="25">Resume</AnchorLink>
-                <AnchorLink href='#portfolio' offset="25">Portfolio</AnchorLink>
-                <AnchorLink href='#contact'>Contact</AnchorLink>
+                
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-20} duration={700}>Home</Link>
+                
+                <Link activeClass="active" to="about" spy={true} smooth={true} offset={-20} duration={700}>About</Link>
+                
+                <Link activeClass="active" to="skill" spy={true} smooth={true} offset={-20} duration={700}>Skills</Link>
+
+                <Link activeClass="active" to="resume" spy={true} smooth={true} offset={-20} duration={700}>Resume</Link>
+
+                <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={-20} duration={700}>Portfolio</Link>
+
+                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-20} duration={700}>Contact</Link>
             </div>
         )
     }

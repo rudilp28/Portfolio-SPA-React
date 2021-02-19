@@ -84,7 +84,7 @@ export default function Capa() {
         
     <div className={classes.capa} > 
         
-        <Collapse in={checked} {...(checked ? { timeout: 1200 } : {})} collapsedHeight={8}>
+        <Collapse in={checked} {...(checked ? { timeout: 1300 } : {})} collapsedHeight={8}>
             <div className={classes.containerText} > 
                 <h1 className={classes.title}>Olá, Eu sou  <br/><span className={classes.colorText}> Rudinei Lopes </span></h1>
                 <h5 className={classes.subtitle}>Front End Developer </h5>
